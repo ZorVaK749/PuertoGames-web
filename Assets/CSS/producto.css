@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: comicsans, sans-serif;
+    background-color: #1a1a2e ;
+  }
+/*Header*/
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #44446b;
+    padding: 12px 24px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation li {
+    display: inline-block;
+    margin-right: 24px;
+  }
+
+  .navigation li:last-child {
+    margin-right: 0;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  h1{
+    color:lightGreen;
+  }
+  .search-box input[type=text] {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 420px;
+    font-size: 18px;
+  }
+
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .logo img{
+      width: 50px;
+      height: 60px;
+      border-radius: 50%;
+  }
+
+  /* Estilos del dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #2d2d50;
+  margin-top: 10px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #1b2838;
+}
+.show {
+  display: block;
+}
+
+
+  h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+
+  .ftp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+    justify-content: space-between;
+  }
+  
+  
+  .ftp-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-basis: 95%;
+      width: auto;
+      height:80%;
+      background-color: #2d2d50;
+      padding: 20px;
+      border-radius: 10px;
+      gap: 20px;
+  }
+  
+  
+  .rdes {
+    color: lightGreen;
+    font-weight: bold;
+  }
+  
+  .ftp img {
+    width: 95%;
+    height: 100%;
+    border-radius: 2px;
+  }
+  
+  .UCN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 8px;
+    color: white;
+    height: auto;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .galeria img {
+    width: 15rem;
+    height: 100%;
+    border-radius: 4px;
+  }
+  img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .Destacado {
+    max-width: 600px; 
+    width: 100%; 
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: white;
+    text-align: justify; 
+    background-color: rgba(45, 45, 80, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+  
+  .precio{
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .boton:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .footer {
+    background-color: #171a21;
+    color: #c6d4df;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .footer-logo img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    color: #8f98a0;
+    margin: 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    color: #c6d4df;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+  
+  

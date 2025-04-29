@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Assets/IMG/PuertoGamesIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <!---->
+      <div class="logo">
+          <img src="Assets/IMG/PuertoGamesIcon.png" alt="Logo">
+      </div>
+      <!--Botones de navegacion-->
+      <nav class="navigation">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <!--dropdwon para hacer que la tabla para la categoria-->
+              <li class="dropdown">
+                <a href="#" id="btn-categorias">Categorías</a>
+                <ul class="dropdown-menu" id="menu-categorias">
+                    <li><a href="#recomendado">Recomendado</a></li>
+                    <li><a href="#free">Free to Play</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                </ul>
+            </li>
+              <li><a href="contacto.html">Contactanos</a></li>
+          </ul>
+      </nav>
+      <!--Titulo para el header-->
+      <div class="title">
+          <h1>Puerto Games</h1>
+      </div>
+      <!--buscador-->
+      <div class="search-box">
+          <input type="text" placeholder="Buscar...">
+      </div>
+      <!--icono del usuario-->
+      <div class="user-profile">
+          <img src="Assets/IMG/icon.png" alt="Perfil">
+      </div>
+  </header>
+  <div><br></div>
+<!--Seccion del Contacto-->
+<main>
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <label for="telefono">Teléfono (Opcional):</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="contacto-preferido">Preferencia de contacto:</label>
+        <select id="contacto-preferido" name="contacto-preferido">
+            <option value="correo">Correo Electrónico</option>
+            <option value="telefono">Teléfono</option>
+            <option value="discord">Discord</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+<div><br></div>
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="Assets/IMG/PuertoGamesIcon.png" alt="Logo" />
+            <p>&copy; 2025 Puerto Games. Todos los derechos reservados.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Soporte</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </footer>
+<!--Script para la tabla de categoria-->
+<script>
+    const btnCategorias = document.getElementById('btn-categorias');
+    const menuCategorias = document.getElementById('menu-categorias');
+
+    btnCategorias.addEventListener('click', (e) => {
+        e.preventDefault();
+        menuCategorias.classList.toggle('show');
+    });
+    window.addEventListener('click', (e) => {
+        if (!btnCategorias.contains(e.target) && !menuCategorias.contains(e.target)) {
+            menuCategorias.classList.remove('show');
+        }
+    });
+</script>
+</body>
+</html>

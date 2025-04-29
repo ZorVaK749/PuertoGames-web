@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Assets/IMG/PuertoGamesIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/producto.css">
+    <title>Puerto Games</title>
+</head>
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <!---->
+      <div class="logo">
+          <img src="Assets/IMG/PuertoGamesIcon.png" alt="Logo">
+      </div>
+      <!--Botones de navegacion-->
+      <nav class="navigation">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <!--dropdwon para hacer que la tabla para la categoria-->
+              <li class="dropdown">
+                <a href="#" id="btn-categorias">Categorías</a>
+                <ul class="dropdown-menu" id="menu-categorias">
+                    <li><a href="#recomendado">Recomendado</a></li>
+                    <li><a href="#free">Free to Play</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                </ul>
+            </li>
+              <li><a href="contacto.html">Contactanos</a></li>
+          </ul>
+      </nav>
+      <!--Titulo para el header-->
+      <div class="title">
+          <h1>Puerto Games</h1>
+      </div>
+      <!--buscador-->
+      <div class="search-box">
+          <input type="text" placeholder="Buscar...">
+      </div>
+      <!--icono del usuario-->
+      <div class="user-profile">
+          <img src="Assets/IMG/icon.png" alt="Perfil">
+      </div>
+  </header>
+  <div><br></div>
+<!--SECCION DEL PRODUCTO-->
+<h2>Recomendado</h2>
+<section class="ftp">
+    <div class="ftp-content">
+        <img src="Assets/IMG/JUEGOSIMG/UCN.jpg" alt="Ultimate-Custom-Night">
+        <div class="UCN">
+            <h3>Five Night's at Freddy's Security Breach</h3>
+            <!--Galeria de imagenes-->
+            <div class="galeria">
+                <img src="Assets/IMG/JUEGOSIMG/UCN1.jpg" alt="Security_Breach1">
+                <img src="Assets/IMG/JUEGOSIMG/UCN2.jpg" alt="Security_Breach2">
+                <img src="Assets/IMG/JUEGOSIMG/UCN3.jpg" alt="Security_Breach3">
+                <img src="Assets/IMG/JUEGOSIMG/UCN4.jpg" alt="Security_Breach4">
+            </div>
+            <p class="Destacado"><b class="rdes">Descripcion:</b><br> ¡Bienvenido al mashup definitivo de FNAF! Aquí estarás atrapado una vez más en una oficina, solo, defendiéndote de los animatrónicos asesinos. 
+                Este juego cuenta con 50 personajes animatrónicos seleccionables de siete juegos de Five Nights at Freddy's, lo que ofrece casi infinitas opciones de personalización. 
+                Combina y combina cualquier conjunto de personajes que te guste, establece su dificultad de 0 a 20 y luego salta directamente a la acción. 
+                Desde tu escritorio de oficina, deberás gestionar dos puertas laterales, dos respiraderos y dos mangueras de aire, todos los cuales conducen directamente a tu oficina.</p>
+            <p class="precio">CLP $14.500</p>
+            <a href="#" class="boton">Comprar</a>
+        </div>
+    </div>
+</section>
+<div><br></div>
+<!--Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Assets/IMG/PuertoGamesIcon.png" alt="Logo" />
+        <p>&copy; 2025 Puerto Games. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Soporte</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+<!--Script para la tabla de categoria-->
+  <script>
+    const btnCategorias = document.getElementById('btn-categorias');
+    const menuCategorias = document.getElementById('menu-categorias');
+    btnCategorias.addEventListener('click', (e) => {
+        e.preventDefault();
+        menuCategorias.classList.toggle('show');
+    });
+    window.addEventListener('click', (e) => {
+        if (!btnCategorias.contains(e.target) && !menuCategorias.contains(e.target)) {
+            menuCategorias.classList.remove('show');
+        }
+    });
+</script>
+
+</body>
+</html>
