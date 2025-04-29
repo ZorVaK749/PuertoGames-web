@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Assets/IMG/PuertoGamesIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/preguntas.css">  
+    <title>Puerto Games</title>
+</head>
+<body>
+  <!--HEADER-->
+<header class="header">
+  <!---->
+    <div class="logo">
+        <img src="Assets/IMG/PuertoGamesIcon.png" alt="Logo">
+    </div>
+    <!--Botones de navegacion-->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <!--dropdwon para hacer que la tabla para la categoria-->
+            <li class="dropdown">
+              <a href="#" id="btn-categorias">Categorías</a>
+              <ul class="dropdown-menu" id="menu-categorias">
+                  <li><a href="#recomendado">Recomendado</a></li>
+                  <li><a href="#free">Free to Play</a></li>
+                  <li><a href="#destacados">Destacados</a></li>
+              </ul>
+          </li>
+            <li><a href="contacto.html">Contactanos</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="preguntas.html">Preguntas</a></li>
+        </ul>
+    </nav>
+    <!--Titulo para el header-->
+    <div class="title">
+        <h1>Puerto Games</h1>
+    </div>
+    <!--buscador-->
+    <div class="search-box">
+        <input type="text" placeholder="Buscar...">
+    </div>
+    <!--icono del usuario-->
+    <div class="user-profile">
+        <img src="Assets/IMG/icon.png" alt="Perfil">
+    </div>
+</header>
+<div><br></div>
+<h2>Preguntas Frecuentes</h2>
+<section class="historia">
+    <div class="item">
+        <p class="content">¿No encontraste lo que buscabas? 👉 <a href="contacto.html">Visítanos en contacto</a> y te ayudamos.</p>
+    </div>
+    <div class="item">    
+        <p class="content">¿Como nacio nuestra organizacion? 👉 <a href="historia.html">Mira nuestra Historia</a></p>
+    </div>    
+    <div class="item">
+        <p class="content">¿Hacen envios a Regiones? 👉 <a href="#">Envios</a></p>
+    </div>   
+    <div class="item"> 
+        <p class="content">¿Qué formas de pago aceptan? 👉 <a href="contacto.html"></a></p>
+    </div>
+    <div class="item">
+        <p class="content">¿Puedo reservar o encargar un producto específico? 👉 <a href="contacto.html"></a></p>
+    </div>
+</section>
+<div><br></div>
+
+<!--Aqui el footer donde quedan las cosas para dejar en el final de la pagina-->
+<footer class="footer">
+    <div class="footer-content">
+    <div class="footer-logo">
+        <img src="Assets/IMG/PuertoGamesIcon.png" alt="Logo" />
+        <p>&copy; 2025 Puerto Games. Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-links">
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Soporte</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+    </div>
+</footer>
+
+<!--Script para la tabla de categorias-->
+<script>
+    const btnCategorias = document.getElementById('btn-categorias');
+    const menuCategorias = document.getElementById('menu-categorias');
+
+    btnCategorias.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        menuCategorias.classList.toggle('show');
+    });
+    window.addEventListener('click', (e) => {
+        if (!btnCategorias.contains(e.target) && !menuCategorias.contains(e.target)) {
+            menuCategorias.classList.remove('show');
+        }
+    });
+</script>
+</body>
+</html>
